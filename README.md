@@ -2,12 +2,22 @@
 
 这是一个基于 Python 3.10 的中文文本处理与分析工具包，提供中文分词、新闻词云生成、基于 HuggingFace 的情感分析、关键词提取等功能。
 
-## 功能模块
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-1. **中文分词对比** - 使用结巴分词对比不同分词引擎的效果
-2. **新闻文章词云生成** - 从开放 API 获取新闻文章并生成词云图
-3. **情感分析（HuggingFace）** - 基于 HuggingFace Transformers 进行中文情感分析（支持 1000+ 条评论）
-4. **关键词提取** - 中文文本关键词提取
+## 📋 项目概述
+
+基于Python的中文文本处理与分析工具包，集成Microsoft Phi-2模型进行高级情感分析。
+
+## 🎯 主要功能
+
+- **Phi-2情感分析**: 使用2.7B参数的Phi-2模型进行中文情感分析
+- **词典情感分析**: 基于情感词典的轻量级情感分析
+- **中文分词对比**: 对比不同分词引擎的效果
+- **关键词提取**: 基于TF-IDF算法提取关键词
+- **新闻词云生成**: 从新闻API获取数据生成词云
+
+## 🚀 快速开始
 
 ## 环境要求
 
