@@ -113,8 +113,8 @@ python keyword_extraction.py
 
 ```bash
 # 克隆项目（如果有 Git）
-git clone <项目地址>
-cd 项目目录
+git clone https://github.com/Kolomovici/HNU_DZ133XC24-Solution
+cd HNU_DZ133XC24-Solution
 
 # 或者直接下载 ZIP 文件并解压
 ```
