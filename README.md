@@ -9,7 +9,11 @@
 
 基于Python的中文文本处理与分析工具包，集成Microsoft Phi-2模型进行高级情感分析。
 
-![Uploading mermaid-1776159953816.png…]()
+
+
+
+<img width="952" height="1378" alt="mermaid-1776159953816" src="https://github.com/user-attachments/assets/68fe43ce-8c4e-4450-955a-9b9ea18975ba" />
+
 
 
 
