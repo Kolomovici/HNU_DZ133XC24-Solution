@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-14T17:00:45.287906",
+    "model": "microsoft/phi-2",
+    "device": "cpu",
+    "total_results": 5,
+    "successful_results": 5
+  },
+  "results": [
+    {
+      "sentiment": "positive",
+      "score": 9.5,
+      "keywords": [
+        "这个产品真的很好用，我非常满意！质量优秀，价格合理，强烈推荐给大家！"
+      ],
+      "reason": "Phi-2 生成情感标签，置信度 95.00%",
+      "text": "这个产品真的很好用，我非常满意！质量优秀，价格合理，强烈推荐给大家！",
+      "text_length": 34,
+      "analysis_time": "2026-04-14T17:00:10.506150",
+      "model": "microsoft/phi-2",
+      "device": "cpu",
+      "processing_time": 9.077,
+      "raw_output": "正面\n\n文本：这个产"
+    },
+    {
+      "sentiment": "negative",
+      "score": 0.5,
+      "keywords": [
+        "质量很差，完全不值这个价格。服务态度也不好，非常失望。"
+      ],
+      "reason": "Phi-2 生成情感标签，置信度 95.00%",
+      "text": "质量很差，完全不值这个价格。服务态度也不好，非常失望。",
+      "text_length": 27,
+      "analysis_time": "2026-04-14T17:00:19.299346",
+      "model": "microsoft/phi-2",
+      "device": "cpu",
+      "processing_time": 8.793,
+      "raw_output": "负面\n\n文本：很好的"
+    },
+    {
+      "sentiment": "positive",
+      "score": 9.5,
+      "keywords": [
+        "产品一般般，没什么特别的感觉。能用，但不会推荐给朋友。"
+      ],
+      "reason": "Phi-2 生成情感标签，置信度 95.00%",
+      "text": "产品一般般，没什么特别的感觉。能用，但不会推荐给朋友。",
+      "text_length": 27,
+      "analysis_time": "2026-04-14T17:00:27.953641",
+      "model": "microsoft/phi-2",
+      "device": "cpu",
+      "processing_time": 8.653,
+      "raw_output": "正面\n\n文本：这是一个"
+    },
+    {
+      "sentiment": "positive",
+      "score": 9.5,
+      "keywords": [
+        "这是我用过的最好的产品之一！功能强大，设计精美，用户体验极佳！"
+      ],
+      "reason": "Phi-2 生成情感标签，置信度 95.00%",
+      "text": "这是我用过的最好的产品之一！功能强大，设计精美，用户体验极佳！",
+      "text_length": 31,
+      "analysis_time": "2026-04-14T17:00:36.480055",
+      "model": "microsoft/phi-2",
+      "device": "cpu",
+      "processing_time": 8.525,
+      "raw_output": "正面\n\n文本：这是我的"
+    },
+    {
+      "sentiment": "negative",
+      "score": 0.5,
+      "keywords": [
+        "糟糕的购物体验，产品有缺陷，客服也不解决问题。"
+      ],
+      "reason": "Phi-2 生成情感标签，置信度 95.00%",
+      "text": "糟糕的购物体验，产品有缺陷，客服也不解决问题。",
+      "text_length": 23,
+      "analysis_time": "2026-04-14T17:00:45.285886",
+      "model": "microsoft/phi-2",
+      "device": "cpu",
+      "processing_time": 8.804,
+      "raw_output": "负面\n\n文本：糟�"
+    }
+  ]
+}
