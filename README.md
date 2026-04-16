@@ -33,11 +33,289 @@
 - 支持的操作系统：Windows 11, Ubuntu 24.04, macOS
 
 ## 安装指南
+# 🔧 从零开始：Anaconda 安装与环境配置完整指南
+
+> **适合人群**：完全零基础的编程初学者  
+> **操作系统**：Windows 10 / Windows 11  
+> **预计时间**：15-20 分钟  
+> **难度**：⭐（非常简单，跟着一步一步做就行）
+
+---
+
+## 📌 一、什么是 Anaconda？（先花 1 分钟了解）
+
+如果你刚接触 Python，可能会被“安装 Python”“安装各种库”“配置环境”这些词吓到。**Anaconda 就是帮你解决这些麻烦的工具**。
+
+简单来说，Anaconda 是一个“Python 全家桶”：
+- ✅ 它自动帮你装好了 Python 本身
+- ✅ 它自带了 1500 多个常用的科学计算库（比如 NumPy、Pandas、Matplotlib 等），你不用一个一个去装
+- ✅ 它提供了一个图形界面 Anaconda Navigator，点点鼠标就能管理环境和包
+- ✅ 它还能创建“虚拟环境”——打个比方，就像给每个项目都准备一个独立的“干净房间”，不会互相干扰
+
+## 📌 二、下载 Anaconda 安装包（重点：用清华镜像源）
+
+### 📥 下载步骤（超详细）
+
+**第 1 步**：打开你的浏览器（推荐 Chrome 或 Edge），在地址栏输入以下地址：
+
+```
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
+```
+
+按回车键进入。
+
+**第 2 步**：你会看到一个文件列表，里面有很多 Anaconda 安装包。**请找到名字类似这样的文件**：
+
+```
+Anaconda3-2025.06-1-Windows-x86_64.exe
+```
+
+> 🔍 **怎么看懂这个文件名**：
+> - `Anaconda3` → Anaconda 的版本
+> - `2025.06-1` → 发布时间（选择最新的就行）
+> - `Windows` → 说明是 Windows 版本
+> - `x86_64` → 说明是 64 位系统（现在几乎所有电脑都是 64 位）
+> - `.exe` → 这是安装程序文件
+
+**第 3 步**：点击这个文件名，浏览器会自动开始下载。文件大小约 600-800 MB，根据网速可能需要 2-5 分钟。
+
+> ⚠️ **下载完成后**：记住文件保存在哪里（一般是“下载”文件夹）。你会看到一个绿色的 Anaconda 图标。
+
+---
+
+## 📌 三、安装 Anaconda（图文级详细步骤）
+
+### 第 1 步：运行安装程序
+
+找到你刚才下载的 `Anaconda3-xxx.exe` 文件，**双击**它。
+
+> ⚠️ 如果系统弹出“是否允许此应用对你的设备进行更改”，点击 **“是”**。
+
+### 第 2 步：欢迎界面
+
+弹出一个窗口，写着 `Welcome to Anaconda3 ...`。  
+👉 直接点击 **`Next >`** 按钮。
+
+### 第 3 步：同意许可协议
+
+你会看到一堆英文文字。  
+👉 点击 **`I Agree`**（我同意）。
+
+### 第 4 步：选择安装类型
+
+有两个选项：
+- `Just Me`（仅为我安装）→ 推荐选这个
+- `All Users`（为所有用户安装）
+
+👉 选择 **`Just Me`**，然后点击 **`Next >`**。
+
+### 第 5 步：选择安装位置（重要！）
+
+这一步选择 Anaconda 安装到哪个文件夹。
+
+- 默认路径是 `C:\Users\你的用户名\anaconda3`
+- **强烈建议修改到其他盘**（比如 D 盘），避免占满 C 盘空间
+
+👉 点击 **`Browse...`** 按钮，选择 D 盘，然后新建一个文件夹叫 `Anaconda3`，完整路径如：
+```
+D:\Anaconda3
+```
+👉 点击 **`OK`**，然后点击 **`Next >`**。
+
+### 第 6 步：高级选项（最关键的一步！）
+
+你会看到两个复选框：
+
+| 选项 | 含义 | 建议 |
+|------|------|------|
+| `Add Anaconda3 to my PATH environment variable` | 将 Anaconda 添加到系统环境变量 | ✅ **强烈建议勾选** |
+| `Register Anaconda3 as my default Python` | 将 Anaconda 设为默认 Python | ✅ **建议勾选** |
+
+> 💡 **为什么要勾选第一个**：如果不勾选，之后每次用 conda 命令都要先切换到 Anaconda 的安装目录，非常麻烦。勾选后，在任何地方都能直接用。
+
+👉 **把两个都勾选上**，然后点击 **`Install`**。
+
+### 第 7 步：等待安装
+
+现在开始安装了，你会看到一个进度条。这个过程大概需要 3-5 分钟。  
+👉 **耐心等待**，不要关闭窗口。
+
+### 第 8 步：安装完成
+
+当进度条走完，你会看到 `Setup Completed` 的提示。  
+👉 点击 **`Next >`**，然后在最后一步点击 **`Finish`**。
+
+🎉 **恭喜！Anaconda 安装完成了！**
+
+---
+
+## 📌 四、验证安装是否成功（确保一切正常）
+
+### 第 1 步：打开 Anaconda Prompt
+
+点击 Windows 的“开始”菜单，输入 `Anaconda Prompt`，你会看到这个程序。  
+👉 点击它，会弹出一个黑色的命令行窗口。
+
+### 第 2 步：检查 conda 版本
+
+在黑色窗口中输入以下命令，然后按回车：
+```
+conda --version
+```
+
+如果显示类似 `conda 24.x.x` 的版本号，说明安装成功。
+
+### 第 3 步：检查 Python 版本
+
+输入以下命令：
+```
+python --version
+```
+
+如果显示类似 `Python 3.11.x` 或 `Python 3.12.x`，说明 Python 也安装好了。
+
+✅ **两个命令都有正常输出，说明 Anaconda 安装成功！**
+
+---
+
+## 📌 五、配置清华镜像源（加速下载，非常重要！）
+
+
+### 🔧 配置步骤
+
+**第 1 步**：还是在 **Anaconda Prompt** 窗口中（黑色那个）。
+
+**第 2 步**：依次输入以下 4 条命令，**每输完一条按一次回车**：
+
+```bash
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+conda config --set show_channel_urls yes
+```
+
+**第 3 步**：验证配置是否成功，输入：
+```bash
+conda config --show channels
+```
+
+如果输出的列表中有 `tuna.tsinghua.edu.cn` 的地址，就说明配置成功了。
+
+> 💡 **配置一次，永久生效**。以后再下载 Python 库，速度会非常快。
+
+---
+
+## 📌 六、创建虚拟环境（给项目一个“干净的房间”）
+
+### 🎯 为什么要创建虚拟环境？
+
+不同的项目可能需要不同版本的 Python 或不同的库。虚拟环境就像给每个项目单独准备一个“干净的房间”，互不干扰。
+
+### 🔧 创建步骤
+
+**第 1 步**：在 **Anaconda Prompt** 中输入以下命令，创建一个名为 `myenv`、Python 版本为 3.11 的虚拟环境：
+
+```bash
+conda create -n myenv python=3.11
+```
+
+**第 2 步**：系统会问你是否继续，输入 `y`（yes），然后按回车。
+
+**第 3 步**：等待下载和安装，完成后输入以下命令**激活**这个环境：
+
+```bash
+conda activate myenv
+```
+
+你会发现命令行前面多了一个 `(myenv)`，表示你已经进入了这个虚拟环境。
+
+**第 4 步**（可选）：在虚拟环境中安装一些常用库，比如：
+```bash
+pip install numpy pandas matplotlib jieba wordcloud
+```
+
+**第 5 步**：用完想退出环境，输入：
+```bash
+conda deactivate
+```
+
+## 📌 七、在 Trae CN 中配置并运行项目
+
+### 第 1 步：下载并安装 Trae CN
+
+Trae CN 是一个国产的 AI 编程工具，界面和 VS Code 很像，对新手很友好。
+
+1. 打开浏览器，访问 Trae CN 官网：`https://www.trae.com.cn/download`
+2. 点击下载 Windows 版本的安装包
+3. 双击安装包，按照提示一路 `下一步` 完成安装
+
+### 第 2 步：打开项目文件夹
+
+1. 打开 Trae CN
+2. 点击左上角 `文件` → `打开文件夹`
+3. 选择你存放代码的文件夹（比如桌面上的“中文文本分析”项目文件夹）
+
+### 第 3 步：配置 Python 解释器（最关键的一步！）
+
+Trae 需要知道使用哪个 Python 环境来运行代码。
+
+1. 按快捷键 **`Ctrl + Shift + P`**（同时按下这三个键）
+2. 在顶部弹出的输入框中，输入 `Python: Select Interpreter`
+3. 点击出现的选项
+4. 在弹出的列表中找到你刚才创建的虚拟环境 `myenv`（路径类似 `D:\Anaconda3\envs\myenv\python.exe`）
+5. 点击选中它
+
+> 💡 **小提示**：如果列表里没有 `myenv`，可以先在 Anaconda Prompt 中激活环境，然后输入 `where python` 查看 Python 路径，手动添加到 Trae。
+
+### 第 4 步：运行代码
+
+1. 在 Trae 左侧的文件列表中，找到你要运行的 Python 文件（比如 `text_sentiment.py`），点击打开
+2. 点击右上角的 **三角形运行按钮** ▶️，或者直接按键盘上的 **`F5`** 键
+3. 下面的“终端”窗口会显示运行结果
+
+### 第 5 步：使用 Trae 的 AI 功能（加分项）
+
+Trae 内置了 AI 助手，可以帮助你写代码、解释代码、找错误。
+
+- 按 **`Ctrl + U`** 打开 AI 聊天栏，输入问题（比如“这段代码是什么意思？”）
+- 选中一段代码，右键选择 `解释代码`，AI 会帮你逐行解释
+
+---
+
+## 📌 八、常见问题排查（如果遇到问题，先看这里）
+
+### ❓ Q1：安装时提示“Path too long”错误
+
+**解决方法**：安装路径不要选太深的文件夹，直接安装在 D 盘根目录，比如 `D:\Anaconda3`。
+
+### ❓ Q2：输入 conda 命令提示“不是内部或外部命令”
+
+**解决方法**：说明环境变量没有配好。重新运行安装程序，这次记得勾选 `Add Anaconda3 to my PATH`。
+
+### ❓ Q3：conda 下载包特别慢
+
+**解决方法**：按照第五节的步骤配置清华镜像源，速度会提升 10 倍以上。
+
+### ❓ Q4：conda 安装包时提示 HTTP 404 或 000 错误
+
+**解决方法**：镜像源配置可能有问题。可以试试重新添加镜像源命令，或者暂时换用中科大镜像源。
+
+### ❓ Q5：Trae 中按 F5 运行没反应
+
+**解决方法**：检查是否已经配置了 Python 解释器（第七节第 3 步）。如果已经配置但还不行，重启 Trae 试试。
+
+### ❓ Q6：运行代码时提示“ModuleNotFoundError: No module named 'xxx'”
+
+**解决方法**：说明缺少某个库。在 Anaconda Prompt 中激活你的虚拟环境，然后输入 `pip install xxx`（把 xxx 换成缺少的库名）即可。
+
+---
+
+🎉 **恭喜！你已经完成了从零到一的全套配置。现在可以开始运行你的中文文本处理与分析工具了！**
 
 ### 快速安装
 
 1. **安装 Python 依赖**：
-   ```bash
+   ```bash（先在anaconda prompt中cd切换到项目目录）
    pip install -r requirements.txt
    ```
 
