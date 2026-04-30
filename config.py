@@ -38,7 +38,7 @@ for directory in [DATA_DIR, NEWS_DIR, WORDCLOUD_DIR, COMMENTS_DIR, FONTS_DIR]:
 # API配置（使用您提供的API密钥）
 NEWS_API_CONFIG = {
     'base_url': 'https://newsapi.org/v2/everything',
-    'api_key': '4aafb37b15ac4d068d53846e138c4bdd',  # 您的API密钥
+    'api_key': '________________________',  # 您的API密钥
     'page_size': 50,
     'language': 'zh',
     'sort_by': 'publishedAt'
